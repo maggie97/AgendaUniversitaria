@@ -72,29 +72,25 @@ struct NavigationContainer: View {
     @Binding var show: Bool
     var body: some View{
         NavigationView{
-            GeometryReader{_ in
-                    
-                    Color.black.opacity(0.05).edgesIgnoringSafeArea(.all)
-                    ZStack(alignment: .leading){
-                        Text("Hola Mundo")
-                        
+            GeometryReader(){_ in
+                ZStack(alignment: .center){
+                        Color.black.opacity(0.05).edgesIgnoringSafeArea(.all)
                         Home()
-                        .background(Color.white.edgesIgnoringSafeArea(.bottom))
-                        
-                    }
+                        .background(Color.white.edgesIgnoringSafeArea(.all))
                 }
-                .navigationBarTitle(Text(title), displayMode: .inline)
-                .navigationBarItems(leading:
-                    NavigationItemButton(icon: "line.horizontal.3.decrease", action: {
-                        withAnimation(.default){
-                            self.show.toggle()
-                        }
-                    }),
-                    trailing:
-                    NavigationItemButton(icon: "ellipsis.circle", action: {
-                        print( "oprions" )
-                    })
-                )
+            }
+            .navigationBarTitle(Text(title), displayMode: .inline)
+            .navigationBarItems(leading:
+                NavigationItemButton(icon: "line.horizontal.3.decrease", action: {
+                    withAnimation(.default){
+                        self.show.toggle()
+                    }
+                }),
+                trailing:
+                NavigationItemButton(icon: "ellipsis.circle", action: {
+                    print( "oprions" )
+                })
+            )
            
         }
     }

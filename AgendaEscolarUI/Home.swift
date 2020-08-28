@@ -33,7 +33,8 @@ struct HomeButtonRow: View {
         padding = 0
     }
     var body: some View{
-        HStack(spacing: 33){
+        HStack(alignment: .center, spacing: 33){
+            Spacer()
             ForEach(row, id: \.self){ item in
                 Image(item)
                     .resizable()
@@ -44,6 +45,7 @@ struct HomeButtonRow: View {
                     .padding(.top, 4)
                     .foregroundColor(Color.blue)
             }
+            Spacer()
         }
     }
 }
