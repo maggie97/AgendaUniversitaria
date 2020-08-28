@@ -12,12 +12,12 @@ struct Home: View{
     var body: some View{
         ScrollView(.vertical, showsIndicators: true){
             //Spacer()
-            HomeButtonRow(rowItems: ["logo1", "logo1", "logo1"])
-            HomeButtonRow(rowItems: ["logo1"])
-            HomeButtonRow(rowItems: ["logo1", "inscripcion", "logo1"])
-            HomeButtonRow(rowItems: ["logo1", "logo1", "logo1"])
-            HomeButtonRow(rowItems: ["logo1"])
-            HomeButtonRow(rowItems: ["logo1"])
+            HomeButtonRow(rowItems: ["UASLP1", "logo1", "duiPortal"])
+            HomeButtonRow(rowItems: ["didactic"])
+            HomeButtonRow(rowItems: ["biblio", "iMAT", "horario"])
+            HomeButtonRow(rowItems: ["DFM", "creativa", "cajavirtual"])
+            HomeButtonRow(rowItems: ["portalAlumnos"])
+            HomeButtonRow(rowItems: ["reservacion"])
         }
     }
 }
@@ -33,17 +33,20 @@ struct HomeButtonRow: View {
         padding = 0
     }
     var body: some View{
-        HStack(spacing: 33){
+        HStack(alignment: .center, spacing: 33){
+            Spacer()
             ForEach(row, id: \.self){ item in
                 Image(item)
                     .resizable()
                     .frame(width: self.widthItems, height: 90)
+                    .background(Color.init("blue_uaslp"))
                     .overlay(Rectangle().stroke(Color.primary.opacity(0.3), lineWidth: 3).shadow(radius: 8).edgesIgnoringSafeArea(.all))
                     .cornerRadius(19)
                     .padding(.all, self.padding)
                     .padding(.top, 4)
-                    .foregroundColor(Color.blue)
+                    
             }
+            Spacer()
         }
     }
 }
