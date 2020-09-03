@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D62BE0424F8921D00C8C640 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62BE0324F8921D00C8C640 /* Menu.swift */; };
 		4D62BE0624F8924600C8C640 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62BE0524F8924600C8C640 /* Home.swift */; };
+		4D91BD602500570B004D43D1 /* MenuName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91BD5F2500570B004D43D1 /* MenuName.swift */; };
 		4DE4C2F72497E82200BE4D03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4C2F62497E82200BE4D03 /* AppDelegate.swift */; };
 		4DE4C2F92497E82200BE4D03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4C2F82497E82200BE4D03 /* SceneDelegate.swift */; };
 		4DE4C2FB2497E82200BE4D03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4C2FA2497E82200BE4D03 /* ContentView.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		4D62BE0324F8921D00C8C640 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		4D62BE0524F8924600C8C640 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4D91BD5F2500570B004D43D1 /* MenuName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuName.swift; sourceTree = "<group>"; };
 		4DE4C2F32497E82200BE4D03 /* AgendaEscolarUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendaEscolarUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE4C2F62497E82200BE4D03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DE4C2F82497E82200BE4D03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				4DE4C2F62497E82200BE4D03 /* AppDelegate.swift */,
 				4DE4C2F82497E82200BE4D03 /* SceneDelegate.swift */,
 				4DE4C2FA2497E82200BE4D03 /* ContentView.swift */,
+				4D91BD5F2500570B004D43D1 /* MenuName.swift */,
 				4D62BE0324F8921D00C8C640 /* Menu.swift */,
 				4D62BE0524F8924600C8C640 /* Home.swift */,
 				4DE4C2FC2497E82600BE4D03 /* Assets.xcassets */,
@@ -276,6 +279,7 @@
 				4DE4C2F72497E82200BE4D03 /* AppDelegate.swift in Sources */,
 				4DE4C2F92497E82200BE4D03 /* SceneDelegate.swift in Sources */,
 				4D62BE0624F8924600C8C640 /* Home.swift in Sources */,
+				4D91BD602500570B004D43D1 /* MenuName.swift in Sources */,
 				4D62BE0424F8921D00C8C640 /* Menu.swift in Sources */,
 				4DE4C2FB2497E82200BE4D03 /* ContentView.swift in Sources */,
 			);

@@ -21,7 +21,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct Container: View {
-    
+    @State var currentNameView = MenuName.home
     
     @State var show = false
     var drag: some Gesture{
@@ -75,7 +75,8 @@ struct NavigationContainer: View {
             GeometryReader(){_ in
                 ZStack(alignment: .center){
                         Color.black.opacity(0.05).edgesIgnoringSafeArea(.all)
-                        Home()
+                        //Home()
+                    self.choose(a: .home)
                         .background(Color.white.edgesIgnoringSafeArea(.all))
                 }
             }
@@ -92,6 +93,14 @@ struct NavigationContainer: View {
                 })
             )
            
+        }
+    }
+    func choose(a view: MenuName ) -> some View{
+        switch view {
+        case .home:
+            return Home()
+        default:
+            return Home()
         }
     }
 }
