@@ -55,7 +55,7 @@ struct Container: View {
                 DragGesture(minimumDistance: 0, coordinateSpace: .local)
                     .onEnded{ gesture in
                         print(gesture.location.x)
-                        if gesture.location.x > UIScreen.main.bounds.width / 1.3{
+                        if gesture.location.x > UIScreen.main.bounds.width / 1.1{ // creo que con 1.1 funciona mejor
                             withAnimation{
                                 self.show.toggle()
                             }
@@ -84,6 +84,7 @@ struct NavigationContainer: View {
             .navigationBarItems(leading:
                 NavigationItemButton(icon: "line.horizontal.3.decrease", action: {
                     withAnimation(.default){
+                        print( "opening" )
                         self.show.toggle()
                     }
                 }),
